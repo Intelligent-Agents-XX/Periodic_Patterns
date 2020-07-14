@@ -44,3 +44,20 @@ for i in range(100):
         wr = csv.writer(file,dialect='excel')
         wr.writerow(entry)   
     """
+''' 329 to 528
+import random
+for i in range(100):
+    X=[]
+    for j in range(20):
+        X.append(round(10*random.random(),2))
+
+    
+    y = 0# Add flag
+    entry = X
+    entry.append(y)
+    # First 20 columns are points and 21st column is flag
+    import csv
+    with open('dataset.csv','a',newline='') as file:
+        wr = csv.writer(file,dialect='excel')
+        wr.writerow(entry)
+'''
